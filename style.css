@@ -7,3 +7,80 @@ Template:       thestory
 
 @import url("../thestory/style.css");
 
+.qg-overlay {
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.qg-overlay:hover {
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+
+.dark-header #header {
+    background-color: rgba(255, 255, 255, 0.58);
+}
+
+/* ----------------- 4.1 Navigation -----------------  */
+.nav-menu > ul > li > a:hover:after,
+.nav-menu > div.menu-ul > ul > li > a:hover:after,
+.nav-menu > ul > li:hover > a:after
+{
+    bottom: 5px;
+    height: 2px;
+    width: 40px;
+    margin-left: -20px;
+    margin-top: -2px;
+}
+.nav-menu ul .current-menu-item a:after {
+    bottom: 5px;
+    height: 2px;
+    width: 40px;
+    margin-left: -20px;
+    margin-top: -2px;
+		background-color:#FFEB3B;
+}
+.nav-menu ul li a {
+  color: #000000;
+}
+.nav-menu ul li a:hover {
+  color: #000000;
+  color: rgba(0, 0, 0, 0.8);
+}
+.nav-menu .mega-menu-item > ul > li > a:hover {
+  color: #000;
+}
+.nav-menu > ul > li > a:after,
+.nav-menu > div.menu-ul > ul > li > a:after {
+  background: #000000;
+}
+.nav-menu ul .current-menu-item a,
+.nav-menu li:hover a,
+.nav-menu .current-menu-parent a,
+.nav-menu .current-menu-ancestor a {
+		color: #000000;
+}
+/*.fixed-header-scroll .content-slider-wrapper{ padding-top: 0 !important; }*/
+.nav-menu .sub-menu li:first-child,
+.nav-menu .children li:first-child {
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+}

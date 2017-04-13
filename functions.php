@@ -105,7 +105,7 @@ function pexeto_print_gallery( $output, $attr ) {
              .$img[0].'" data-rel="lightbox[group-'.$post->ID.$pexeto->gallery_count.']" title="'
              .htmlspecialchars( $attachment->post_content ).'" ><img src="'
              .$imgurl.'" alt="'.esc_attr(get_post_meta($attachment->ID, '_wp_attachment_image_alt', true)).'"/>';
-        $html.='<div class="qg-overlay"><span class="icon-circle"><span class="pg-icon lightbox-icon"></span></span>';
+        $html.='<div class="qg-overlay">';
         if ( $caption ) {
             $html.='<span class="qg-title">'.$caption.'</span>';
         }
